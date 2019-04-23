@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+		<title>Replacing quotes</title>
+		
+    <script>
+			window.onload = style => {
+				document.body.style.fontFamily = "sans-serif";
+			}
+
+			change = () => {
+				let div = document.getElementById("text");
+				let regexp = /'\B|\B'/gim; 
+				div.innerHTML = div.innerHTML.replace(regexp, "\"");
+			};
+		</script>
+		
+</head>
+<body>
+	<header>
+		<button class="button text" type="button" onclick="change();">Заменить</button>
+	</header>
+	<main>
+		<div id="text">
+			<p>Minim ea consectetur deserunt duis consequat excepteur ullamco dolore voluptate dolor dolore incididunt.
+			Ut ex consequat reprehenderit enim sint quis Lorem ex duis consequat velit adipisicing.
+			Do nisi cupidatat commodo do adipisicing.	
+			Irure commodo et exercitation irure <b>tempor's</b> ex elit esse et eu et irure et.
+			Ex dolor esse commodo nisi ullamco consectetur id ullamco anim dolore voluptate.
+			</p>
+
+			<p>Voluptate do ipsum amet exercitation anim: <b>'</b>Tempor est labore incididunt laboris duis est proident id enim ex<b>'</b>.
+			</p>
+
+			<p>Lorem occaecat quis nisi non sunt <b>'elit'</b> ex consectetur sunt.
+			In id duis consectetur cillum <b>veniam's</b> commodo consequat aliquip Lorem enim sit sint id.
+			Esse sint ex id Lorem reprehenderit. Velit <b>veniam's</b> amet incididunt id eu nisi. Ad id tempor dolor esse cupidatat.
+			Esse elit exercitation nisi cillum minim officia eu voluptate nulla fugiat.
+			Laboris veniam cillum sunt mollit sit irure non eu ipsum deserunt exercitation labore.
+			</p>
+
+			<blockquote>
+					<b>'</b>Irure consectetur do id <b>'anim'</b> excepteur amet nostrud mollit ut non tempor sunt nisi.
+				Consequat culpa nulla est cupidatat anim ullamco culpa.
+				Dolore est consequat quis excepteur ut exercitation exercitation irure non proident.
+				Non magna dolor consectetur ad anim labore nostrud elit labore consequat nisi<b>'</b>.<br>
+				V. Pupkov
+		</blockquote>
+			
+		</div>
+	</main>
+</body>
+</html

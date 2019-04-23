@@ -1,0 +1,38 @@
+body {
+	background-color: beige;
+	
+}
+
+form input,
+form textarea,
+form label,
+form span {
+	display: block;
+	width: 415px;
+	margin: 10px auto;
+	font-weight: bold;
+	color: #445162;
+	border-radius: 10px;
+}
+
+input,
+textarea {
+	padding: 7px;
+}
+
+form div {
+	height: 100px;
+}
+
+form span {
+	color: red;
+	width: 415px;
+}
+
+#button {
+	display: block;
+	margin: 10px auto 0;
+	padding: 5px;
+	border-radius: 10px;
+	cursor: pointer;
+}
